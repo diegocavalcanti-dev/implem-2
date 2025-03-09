@@ -1,5 +1,4 @@
 "use client";
-import * as React from "react";
 import { TopBanner } from "./Header/TopBanner";
 import { NavBar } from "./Header/NavBar";
 import { MainCarousel } from "./MainCarousel";
