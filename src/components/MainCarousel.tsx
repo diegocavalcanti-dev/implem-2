@@ -1,16 +1,18 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/autoplay"; // Importar o CSS do autoplay
 
 export function MainCarousel() {
   return (
     <section className="relative m-3.5">
       <Swiper
+        modules={[Autoplay]} // Registrando o módulo do Autoplay
         spaceBetween={10} // Espaçamento entre os slides
         slidesPerView={1} // Quantos slides serão exibidos de uma vez
         loop={true} // Habilita loop infinito
         grabCursor={true} // Habilita a funcionalidade de arrastar
-        autoplay={{ delay: 2500 }} // Tempo de transição entre os slides
+        autoplay={{ delay: 2500, disableOnInteraction: false }} // Configuração do autoplay
         className="rounded-xl"
       >
         <SwiperSlide>
@@ -34,21 +36,6 @@ export function MainCarousel() {
             className="object-cover w-full h-[200px]"
           />
         </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/0ff69e8d3ec2f1ba0c1c21b00be5430834250551"
-            alt="Banner"
-            className="object-cover w-full h-[200px]"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/0ff69e8d3ec2f1ba0c1c21b00be5430834250551"
-            alt="Banner"
-            className="object-cover w-full h-[200px]"
-          />
-        </SwiperSlide>
-        {/* Adicione mais SwiperSlide conforme necessário */}
       </Swiper>
 
       <div className="flex justify-center mt-3">
