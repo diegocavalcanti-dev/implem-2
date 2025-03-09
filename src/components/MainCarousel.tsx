@@ -1,7 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/autoplay"; // Importar o CSS do autoplay
+import 'swiper/swiper-bundle.css';
 
 export function MainCarousel() {
   return (
@@ -24,14 +23,14 @@ export function MainCarousel() {
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/0ff69e8d3ec2f1ba0c1c21b00be5430834250551"
+            src="https://www.phooto.com.br/wp-content/uploads/galeria/2025/campanhas-site/revele-eternize-2025/home/desk/fotografe-revele-eternize-2025-desk-papelaria-1920x600px.webp"
             alt="Banner"
             className="object-cover w-full h-[200px]"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/0ff69e8d3ec2f1ba0c1c21b00be5430834250551"
+            src="https://www.phooto.com.br/wp-content/uploads/galeria/2025/campanhas-site/revele-eternize-2025/home/desk/fotografe-revele-eternize-2025-desk-fotos-1920x600px.webp"
             alt="Banner"
             className="object-cover w-full h-[200px]"
           />
